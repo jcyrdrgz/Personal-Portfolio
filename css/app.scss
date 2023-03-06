@@ -1,0 +1,46 @@
+@import "_import";
+
+$bodycolor: #1f1b24;
+$white: red;
+// variables para if change mo sa future dito lang tapos macompil yan scss to css
+body {
+  background-color: $bodycolor;
+}
+
+// eto sample men gamitin natin sa index.php mo, diba main class ka na .main
+// pwde mo targer yung under nya pa
+.main {
+  &-heading {
+    width: 500px;
+    position: absolute;
+    left: 16%;
+    top: 47%;
+    transform: translate(-16%, -47%);
+    h1 {
+      font-size: 45px;
+      margin: 0px;
+      letter-spacing: 3px;
+      color: $white;
+    }
+    h2 {
+      font-size: 37px;
+      margin: 0px;
+      letter-spacing: 3px;
+      color: #fc6f41;
+    }
+    p {
+      color: #e2e2e2;
+    }
+  }
+  &-btn {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fc6f41;
+    border-radius: 10px;
+    color: $white;
+    transition: 0.6s ease-in-out;
+  }
+}
